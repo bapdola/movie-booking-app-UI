@@ -10,6 +10,9 @@
   list-style: none;
 }
 
+p {
+  margin-bottom: 0rem !important;
+}
 :root {
   --text-color: #fdffff;
   --text: #787878;
@@ -105,7 +108,7 @@ html {
 /* search */
 .search {
   position: relative;
-  padding: 4rem 31rem;
+  padding: 4rem 10rem;
 }
 
 .search input {
@@ -151,9 +154,6 @@ html {
 /* carousel */
 .carousel-inner {
   display: flex;
-  justify-content: space-around;
-  padding: 2rem 18rem;
-  height: 60rem;
 }
 .carousel-title {
   display: flex;
@@ -162,6 +162,7 @@ html {
 }
 .carousel {
   overflow: hidden;
+  padding: 1rem 5rem;
 }
 .active-title {
   color: var(--bg-orange) !important;
@@ -170,60 +171,59 @@ html {
 .carousel-title p {
   color: var(--text-color);
   text-transform: uppercase;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 500;
-  margin: 0 4rem;
+  margin: 0 3rem;
 }
 
 .movie-rating {
   position: absolute;
   display: flex;
-  justify-content: space-between;
-  width: 30rem;
-  height: 12rem;
-  padding: 1rem;
+  gap: 7rem;
+  padding: 2rem 0rem 0rem 1rem;
 }
 .movie-rating-text {
   color: var(--text-color);
   background: var(--bg-orange);
   font-size: 2rem;
   font-weight: 500;
-  padding: 0.25rem 1.25rem;
   border-radius: 5px;
-  width: 7rem;
-  height: 4rem;
-  margin-top: 1.25rem;
+  width: 6rem;
+  height: 3rem;
+  text-align: center;
 }
 .move-rating-detail {
   display: flex;
   flex-direction: column;
   background: var(--bg-color-menu);
-  margin-top: 1.25rem;
-  height: 7rem;
-  border-radius: 7px;
+  border-radius: 5px;
   opacity: 0.8;
 }
 .movie-rating-number {
   color: var(--text-color);
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
+  font-weight: 500;
 }
 .movie-rating-icon {
-  margin: 1rem 4px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  padding: 0 0.25rem;
 }
 .movie-rating-icon i {
   color: var(--bg-orange);
 }
 .carousel-item {
   display: block !important;
-  margin: 4rem 2rem !important;
+  margin: 4rem 1rem !important;
   height: 44rem;
 }
 .carousel-item img {
-  width: 30rem;
+  border-radius: 6px;
+  height: 36rem;
+  width: 24.5rem;
+  object-fit: cover;
 }
-.carousel-item .movie-title {
+.carousel-item .movie-name {
   color: var(--text-color);
   font-size: 3rem;
   font-weight: 500;
@@ -234,18 +234,15 @@ html {
   font-size: 2rem;
   font-weight: 500;
 }
-.carousel-control-prev {
-  left: -80px !important;
-}
-.carousel-control-next {
-  right: -80px !important;
-}
+
 .carousel-control-next,
 .carousel-control-prev {
   height: 64rem !important;
-  width: 27% !important;
+  width: 5% !important;
 }
-
+.carousel-control-next {
+  right: -3px;
+}
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   width: 6rem !important;
@@ -271,3 +268,199 @@ html {
   color: var(--text-color);
   border-radius: 4px;
 }
+/* end carousel */
+
+/* showtimes-movies */
+.cinema-logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 13rem;
+}
+.cinema-logo img {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background: var(--text-color);
+  opacity: 0.7;
+}
+.cinema-logo img:first-child {
+  opacity: 1 !important;
+  border: 4px solid var(--text-color) !important;
+}
+.showtimes-cinema {
+  border-radius: 4px;
+  background: var(--text-color);
+  margin: 0 2rem;
+  padding: 0 3.5rem;
+  display: flex;
+}
+.local-detail {
+  display: flex;
+  border-bottom: 1px solid #84ba5b;
+  padding: 1rem 0rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.local-cinema img {
+  width: 8rem;
+  height: 8rem;
+}
+.address-cinema-items {
+  width: 21rem;
+  padding: 0 1rem;
+}
+.cinema-name {
+  color: #84ba5b;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.cinema-name span {
+  font-weight: bold;
+  color: var(--bg-color) !important;
+}
+.address-cinema {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.date-cinema {
+  padding: 0 1rem;
+  border-right: 2px solid var(--text);
+  border-left: 2px solid var(--text);
+  width: 24rem;
+  height: 44rem;
+}
+.date-detail {
+  border-bottom: 1px solid #84ba5b;
+  text-align: center;
+  padding: 1rem 3rem;
+}
+.date-detail .day-cinema {
+  color: #84ba5b;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.date-detail .month-cinema {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #84ba5b;
+}
+.movies-cinema {
+  padding: 0 1rem;
+}
+.movie-item {
+  display: flex;
+  border-bottom: 1px solid var(--text);
+  margin-top: 1rem;
+}
+.movie-item:last-child {
+  border: none;
+}
+.movie-item img {
+  width: 20rem;
+  height: 16rem;
+}
+.movie-title {
+  padding-left: 2rem;
+}
+.movie-title p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--bg-color);
+}
+.movie-title p span {
+  color: var(--text-color);
+  background-color: var(--bg-orange);
+  border-radius: 50%;
+  height: 10rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.movie-sub {
+  padding: 0 3rem;
+  margin-bottom: 2rem;
+}
+.movie-sub .cinema-2D {
+  background: #84ba5b;
+  border-radius: 3px;
+  padding: 0rem 0.75rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.movie-sub .cinema-sub {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  color: var(--bg-color);
+}
+.movies-detail {
+  margin-left: 1.8rem;
+  padding-top: 1rem;
+}
+.movie-times .show-time {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-times ul li {
+  font-size: 2rem;
+  font-weight: 400;
+  border: 3px solid var(--bg-color);
+  border-radius: 4px;
+  padding: 0 0.3rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+/* end  showtimes-movies */
+
+/* event */
+.home-event {
+  padding-top: 3rem;
+}
+.event-container {
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.event-item {
+  width: 50%;
+}
+.event-item img {
+  width: 54rem;
+  border-radius: 5px;
+}
+.event-content {
+  padding: 1rem 2rem 2rem 0rem;
+}
+.event-content h1 {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.event-content p {
+  color: var(--text);
+  font-size: 1.5rem;
+  padding-top: 0.3rem;
+  font-weight: 500;
+  line-height: 2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.event-meta {
+  display: flex;
+  gap: 5rem;
+}
+/* end event */
