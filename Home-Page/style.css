@@ -24,14 +24,14 @@ html {
   font-size: 62%;
 }
 .right {
-  margin-left: 300px;
+  margin-left: 320px;
   background: var(--bg-color);
 }
 /* nav-bar */
 .menu-left {
   padding: 3rem 1rem;
   background: var(--bg-color-menu);
-  width: 300px;
+  width: 320px;
   height: 100%;
   position: fixed;
   z-index: 2;
@@ -141,7 +141,7 @@ html {
 }
 .button {
   background: var(--bg-orange);
-  padding: 0.7rem;
+  padding: 0.7rem 0.9rem;
   border-radius: 5px;
   margin-right: 0.5rem;
   color: var(--text-color);
