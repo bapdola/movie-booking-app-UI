@@ -24,14 +24,14 @@ html {
   font-size: 62%;
 }
 .right {
-  margin-left: 38rem;
+  margin-left: 300px;
   background: var(--bg-color);
 }
 /* nav-bar */
 .menu-left {
   padding: 3rem 1rem;
   background: var(--bg-color-menu);
-  width: 38rem;
+  width: 300px;
   height: 100%;
   position: fixed;
   z-index: 2;
@@ -67,7 +67,7 @@ html {
 .active {
   background: var(--bg-orange);
   border-radius: 4px;
-  font-size: 2.5rem !important;
+  font-size: 2.1rem !important;
   font-weight: 500 !important;
 }
 .menu a i {
@@ -141,12 +141,12 @@ html {
 }
 .button {
   background: var(--bg-orange);
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 5px;
   margin-right: 0.5rem;
   color: var(--text-color);
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 500;
 }
 /* end search */
