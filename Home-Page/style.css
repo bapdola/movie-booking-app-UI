@@ -108,7 +108,8 @@ html {
 /* search */
 .search {
   position: relative;
-  padding: 4rem 10rem;
+  text-align: center;
+  padding: 3rem 0;
 }
 
 .search input {
@@ -116,6 +117,7 @@ html {
   color: var(--text-color);
   font-size: 2rem;
   margin-right: 0.75rem;
+  margin-top: 0.75rem;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -142,6 +144,7 @@ html {
 .button {
   background: var(--bg-orange);
   padding: 1rem;
+  margin-top: 0.75rem;
   border-radius: 5px;
   margin-right: 0.5rem;
   color: var(--text-color);
@@ -216,7 +219,30 @@ html {
   display: block !important;
   margin: 4rem 1rem !important;
   height: 44rem;
+  position: relative;
+  cursor: pointer;
 }
+
+.carousel-item .overplay {
+  position: absolute;
+  padding: 1.5rem;
+  border-radius: 50%;
+  border: 3px solid var(--text-color);
+  top: 39%;
+  left: 35%;
+  display: none;
+  transition: all 0.5s ease;
+}
+.carousel-item .overplay i {
+  color: var(--text-color);
+  font-size: 4rem;
+  margin-left: 3px;
+}
+
+.carousel-item:hover .overplay {
+  display: block;
+}
+
 .carousel-item img {
   border-radius: 6px;
   height: 36rem;
@@ -234,7 +260,19 @@ html {
   font-size: 2rem;
   font-weight: 500;
 }
+.movie-info .buy-ticket .button {
+  width: 100%;
+  display: none;
+  position: absolute;
+  transition: all 0.5s ease;
+}
 
+.carousel-item:hover .button {
+  display: block;
+}
+.carousel-item:hover p {
+  display: none;
+}
 .carousel-control-next,
 .carousel-control-prev {
   height: 64rem !important;
@@ -280,7 +318,7 @@ html {
   width: 11rem;
   height: 11rem;
   border-radius: 50%;
-  background: var(--text-color);
+  background: #cdcdcd;
   opacity: 0.7;
 }
 .cinema-logo img:first-child {
@@ -429,9 +467,17 @@ html {
 }
 .event-item {
   width: 50%;
+  padding: 1rem;
+}
+.event-item:hover {
+  background: var(--bg-orange);
+  border-radius: 5px;
+}
+.event-item:hover p {
+  color: var(--text-color);
 }
 .event-item img {
-  width: 54rem;
+  width: 100%;
   border-radius: 5px;
 }
 .event-content {
@@ -462,5 +508,125 @@ html {
 .event-meta {
   display: flex;
   gap: 5rem;
+  padding: 1rem 0;
+}
+.event-meta p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.event-meta p i {
+  margin-right: 1rem;
+  font-size: 2.3rem;
 }
 /* end event */
+/* footer */
+.footer {
+  position: relative;
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/footer/footer\(1\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  opacity: 0.1;
+  z-index: 3;
+}
+.first-footer {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  padding: 2rem 0 6rem 0;
+  background: #000000;
+}
+.first-footer::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  background: var(--bg-orange);
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+}
+.first-footer h1 {
+  color: var(--bg-orange);
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+.name-movie {
+  text-align: center;
+}
+.name-movie p {
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 2rem;
+}
+.logo-partner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.partner-movie {
+  width: 22rem;
+}
+.partner-movie img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background: var(--text-color);
+}
+.icon-app {
+  padding-top: 2rem;
+}
+.app-movie i {
+  font-size: 6rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.social-movie {
+  font-size: 6rem;
+  color: var(--text);
+  font-weight: 600;
+}
+.icon-social {
+  padding-top: 2rem;
+}
+
+.second-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 4rem;
+  gap: 3rem;
+}
+.footer-logo i {
+  font-size: 8rem;
+  color: var(--bg-orange);
+  font-weight: 700;
+  /* background: var(--text-color); */
+}
+.foter-content h1 {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.foter-content p {
+  color: var(--text);
+  font-size: 1.5rem;
+  margin-top: 2rem !important;
+}
+
+/* end footer */
