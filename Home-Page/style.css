@@ -158,7 +158,7 @@ html {
 .carousel-inner {
   display: flex;
 }
-.carousel-title {
+.title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,7 +171,7 @@ html {
   color: var(--bg-orange) !important;
   border-bottom: 1px solid var(--bg-orange);
 }
-.carousel-title p {
+.title p {
   color: var(--text-color);
   text-transform: uppercase;
   font-size: 4rem;
@@ -326,11 +326,11 @@ html {
   border: 4px solid var(--text-color) !important;
 }
 .showtimes-cinema {
+  display: flex;
   border-radius: 4px;
   background: var(--text-color);
   margin: 0 2rem;
-  padding: 0 3.5rem;
-  display: flex;
+  padding: 1rem 3.5rem 3rem 3.5rem;
 }
 .local-detail {
   display: flex;
