@@ -99,12 +99,14 @@ html {
   margin-top: 2px;
 }
 .nav-end {
-  display: flex;
   background: var(--bg-color);
   padding: 1rem;
   border-radius: 5px;
 }
-
+.nav-end .user {
+  display: flex;
+  align-items: center;
+}
 .user img {
   width: 5rem;
   height: 5rem;
@@ -115,7 +117,7 @@ html {
   font-size: 1.75rem;
   color: var(--text-color);
 }
-
+/* end nav bar */
 /* movie-banner  */
 .movie-banner {
   position: relative;
